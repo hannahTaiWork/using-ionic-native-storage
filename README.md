@@ -37,7 +37,7 @@ Make sure your Ionic project could run on browser and emulator.
 
 ## Find Stored Datas
 ### Android
-- In Android Studio's Device File Explorer, open [/data/data/<appId>/shared_prefs/NativeStorage.xml].
+- In Android Studio's Device File Explorer, open [/data/data/*appId*/shared_prefs/NativeStorage.xml].
 - The stored item and value saved as key-value pairs in the xml file.
   ```
   <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
@@ -52,7 +52,7 @@ Make sure your Ionic project could run on browser and emulator.
   let folder: String = path[0] as! String
   NSLog("Your NSUserDefaults are stored in this folder: %@/Preferences", folder)
   ```
-- Run with device and open the path from last step, open [<appId>.plist].
+- Run with device and open the path from last step, open [*appId*.plist].
 - The stored item and value saved as key-value pairs in the plist file.
 ### Web
 - Cordova plugin NativeStorage on browser support is only for testing purposes.
