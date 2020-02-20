@@ -31,3 +31,5 @@ xcuserdata
 IDEWorkspaceChecks.plist
 sample-ionic-project/plugins/android.json
 sample-ionic-project/plugins/ios.json
+sample-ionic-project/android
+sample-ionic-project/ios

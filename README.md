@@ -45,9 +45,12 @@ Make sure your Ionic project could run on browser and emulator.
       <string name="SAVED_NAME">"Vivian"</string>
   </map>
   ```
-
 ### iOS
-- In terminal, run `find ~/Library/Developer/CoreSimulator -type f -name <appId>.plist`.
+- When running on Xcode, the first line in console output shows something like below. It helps identifying device and application's UUID.
+  ```
+  2020-02-20 15:09:30.894036+0800 App[46739:596680] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/<user>/Library/Developer/CoreSimulator/Devices/<Device UUID>/data/Containers/Data/Application/<Application UUID>/Library/Cookies/<appId>.binarycookies
+  ```
+- Open [~/Library/Developer/CoreSimulator/Devices/<*Device UUID*>/data/Containers/Data/Application/<*Application UUID*>/Library/Preferences/<*appId*>.plist].
 - The stored item and value saved as key-value pairs in the plist file.
 
 ### Web
@@ -60,7 +63,6 @@ Make sure your Ionic project could run on browser and emulator.
 - Run `ionic cap run ios -l`.
 
 # Download this project
-It's probably easier to just add android and ios for capacitor again.
 - cd to [sample-ionic-project].
 - `npm i`.
 - `ionic build`.
