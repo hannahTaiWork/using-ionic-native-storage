@@ -45,15 +45,11 @@ Make sure your Ionic project could run on browser and emulator.
       <string name="SAVED_NAME">"Vivian"</string>
   </map>
   ```
+
 ### iOS
-- Add following code at [sample-ionic-project/ios/App/App/AppDelegate.swift] in application method.
-  ```
-  let path: [AnyObject] = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true) as [AnyObject]
-  let folder: String = path[0] as! String
-  NSLog("Your NSUserDefaults are stored in this folder: %@/Preferences", folder)
-  ```
-- Run with device and open the path from last step, open [<*appId*>.plist].
+- In terminal, run `find ~/Library/Developer/CoreSimulator -type f -name <appId>.plist`.
 - The stored item and value saved as key-value pairs in the plist file.
+
 ### Web
 - Cordova plugin NativeStorage on browser support is only for testing purposes.
 
@@ -67,7 +63,6 @@ Make sure your Ionic project could run on browser and emulator.
 It's probably easier to just add android and ios for capacitor again.
 - cd to [sample-ionic-project].
 - `npm i`.
-- Remove [sample-ionic-project/android/] and [sample-ionic-project/ios/] folders.
 - `ionic build`.
 - Run `ionic cap add android` and `ionic cap add ios`.
 - Run `ionic serve`, `ionic cap run android -l --external`, `ionic cap run ios -l`.
