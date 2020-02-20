@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "sample-ionic-project",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
