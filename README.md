@@ -1,5 +1,5 @@
 # Using Ionic Native Storage
-A brief note for using Ionic Native Storage.
+A brief note for using Ionic Native Storage with Ionic & Angular & Capacitor.
 
 ## Before You Start
 Make sure your Ionic project could run on browser and emulator.
